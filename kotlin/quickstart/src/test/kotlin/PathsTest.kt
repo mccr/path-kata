@@ -1,5 +1,5 @@
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class PathsTest {
     val a = Point(0, 10)
@@ -12,11 +12,11 @@ class PathsTest {
     @Test
     fun testSegmentDistance0() {
         val segment = Segment(a, a)
-        Assert.assertEquals(0.0, segment.distance, 0.01)
+        assertEquals(0.0, segment.distance, 0.01)
     }
 
     @Test
     fun testSegmentDistanceNonZero() {
-        Assert.assertEquals(10.0, ab.distance, 0.01)
+        assertEquals(10.0, ab.distance, 0.01)
     }
 }
